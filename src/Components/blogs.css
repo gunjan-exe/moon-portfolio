@@ -1,0 +1,139 @@
+/* General Layout */
+.blogs-container {
+  display: flex;
+  background-color: #0d0d0d; /* Deep black background for galaxy theme */
+  color: #d3d3d3; /* Gray for text */
+  height: 100vh;
+  padding-top: 90px;
+}
+
+/* Sidebar */
+.blogs-sidebar {
+  width: 25%;
+  padding: 1rem;
+  background-color: #1a1a1a; /* Slightly lighter black for contrast */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  position: sticky; /* Sidebar remains static */
+  top: 0;
+  height: 100vh;
+}
+
+.blogs-search-bar {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d0d0d; /* Matches main background */
+  color: #d3d3d3;
+  outline: none;
+}
+
+.blogs-categories {
+  margin-top: 1rem;
+}
+
+.blogs-categories button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d0d0d;
+  color: #d3d3d3;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.blogs-categories button:hover,
+.blogs-categories button.active {
+  background-color: #333333; /* Dark gray for hover and active state */
+}
+
+/* Blog List */
+.blogs-list {
+  width: 75%;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #0d0d0d;
+  height: calc(100vh - 90px); /* Adjust for the header */
+}
+
+.blog-item {
+  display: flex;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.blog-item:hover {
+  transform: scale(1.02);
+  background-color: #333333;
+}
+
+.blog-thumbnail {
+  width: 100px;
+  height: 100px;
+  background-color: #4c4c7f; /* Optional accent color */
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.blog-content h3 {
+  margin: 0 0 0.5rem;
+}
+
+.blog-keywords {
+  margin-top: 0.5rem;
+}
+
+.keyword {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.5rem 0.5rem 0;
+  background-color: #333333;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+/* Blog Details View */
+.blog-details {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  height: calc(100vh - 90px); /* Adjust for the header */
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.blog-scrollable-content {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+/* Back Button */
+.back-button {
+  position: absolute;
+  top: 5px; /* Adjusted to move it slightly upwards */
+  left: 15px;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  background-color: #333333;
+  color: #d3d3d3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #4c4c4c;
+  transform: scale(1.05);
+}

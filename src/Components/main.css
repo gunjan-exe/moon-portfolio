@@ -1,0 +1,138 @@
+/* .moon-mask {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.chaand {
+    width: 70%;
+    height: 70%;
+    padding-left: 18rem;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.moon-mask img{
+    animation: rotatechaand 10s linear infinite;
+
+}
+
+@keyframes rotatechaand {
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg)}
+    
+} */
+
+/* Parent container */
+.moon-mask {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center; /* Center the moon inside the container */
+}
+
+/* Moon image */
+.chaand {
+    width: 70%; /* Scaled based on your design */
+    height: 70%;
+    padding-left: 18rem; /* Maintains your current offset */
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    animation: rotateMoon 150s linear infinite; 
+}
+
+/* Rotation Keyframes */
+@keyframes rotateMoon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.moon-mask::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* background: url("https://img.freepik.com/free-photo/sky-astrology-cosmos-galaxy-starry_53876-31009.jpg?w=996&t=st=1720968815~exp=1720969415~hmac=8f391551d3dcc2f0043a82231a1f46388746a8f4012af91574d76c4bbbc8a522"); */
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    
+}
+
+
+.container .content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 70%;
+    /* text-align: center; */
+
+}
+
+.content h1 a{
+    color: yellow;
+    text-decoration: double;
+    
+}
+
+.content h1 a:hover{
+    color: rgb(134, 134, 3);
+}
+
+.button {
+    padding-top: 30px;
+    color: aqua;
+    font-size: medium;
+
+}
+
+.button a {
+
+    text-decoration: none;
+    /* border-radius: 50px; */
+    padding: 10px 20px; 
+    background-color: #7c7c84;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.button a:hover{
+    background-color: #484849;
+}
+
+.container .content p {
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:1040px) {
+    .content p {
+        top: auto;
+        left: 0%;
+
+    }
+
+}
+

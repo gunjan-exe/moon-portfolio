@@ -1,0 +1,51 @@
+.hero-img {
+    width: 100%;
+    background: rgba(0, 0, 0. 0.8);
+    height: 60vh;
+    position: relative;
+    border-radius: 20px;
+}
+
+.hero-img ::before {
+    content: "";
+    background: url("https://img.freepik.com/premium-photo/glowing-spaceship-orbits-planet-stunning-galaxy-generated-by-ai_188544-9625.jpg?w=1060");
+    background-size: 100%;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img h1 {
+    font-size: 2.4rem;
+}
+
+.hero-img p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    .hero-img h1 {
+        font-size: 2rem;
+    }
+
+    .hero-img ::before {
+        background-size: cover;
+        opacity: 0.5;
+    }
+}

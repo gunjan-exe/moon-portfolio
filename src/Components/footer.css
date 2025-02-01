@@ -1,0 +1,43 @@
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    /* padding: 40px 20px; */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* border-top: 2px solid #00d1ff; Subtle divider */
+}
+
+.footer .cta {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00d1ff;
+    /* margin-bottom: 20px; */
+}
+
+.footer .cta:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    font-size: 28px;
+    transition: transform 0.3s;
+}
+
+.footer .social-icons a:hover {
+    transform: scale(1.2);
+    color: #00d1ff; /* Hover effect */
+}
+
+.footer .social-icons a:active {
+    transform: scale(1);
+}
